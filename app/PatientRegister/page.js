@@ -124,29 +124,30 @@ export default function RegistrationPage() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-900 text-slate-300 flex items-center justify-center p-4 sm:p-6 lg:p-8">
+    <div className="min-h-screen bg-white text-slate-300 flex items-center justify-center p-4 sm:p-6 lg:p-8">
       <LoadingOverlay isLoading={loading} text="กำลังลงทะเบียน กรุณารอสักครู่..." />
 
       {/* Main Form Container */}
-      <div className="max-w-4xl w-full bg-slate-800/50 backdrop-blur-sm border border-slate-700 p-6 sm:p-10 rounded-2xl shadow-2xl shadow-violet-500/10">
-        <h1 className="text-2xl sm:text-3xl font-bold text-center mb-8 text-slate-50">ลงทะเบียนใช้บริการ Telemedicine</h1>
-        <div className="text-center mb-6 -mt-4">
-          <p className="text-slate-400">
+      <div className="max-w-4xl w-full bg-white border border-slate-200 p-6 sm:p-10 shadow-lg
+">
+        <h1 className="text-2xl sm:text-3xl font-bold text-center mb-8 text-black">ลงทะเบียนใช้บริการ Telemedicine</h1>
+        {/* <div className="text-center mb-6 -mt-4">
+          <p className="text-black">
             เป็นผู้ป่วยเก่าและต้องการขอรับยาเดิม?{' '}
-            <Link href="/Oldpatient" className="font-semibold text-cyan-400 hover:text-cyan-300 hover:underline transition-colors duration-150">
+            <Link href="/Oldpatient" className="font-semibold text-blue-600 hover:underline transition-colors duration-150">
               คลิกที่นี่
             </Link>
           </p>
-        </div>
+        </div> */}
 
         {/* Form Element */}
         <form onSubmit={handleSubmit} className="space-y-8">
           {/* Fieldset: ข้อมูลส่วนตัว */}
           <fieldset className="space-y-4">
-            <legend className="text-lg font-semibold mb-4 border-b pb-3 border-slate-600 text-slate-200 w-full">ข้อมูลส่วนตัว</legend>
+            <legend className="text-lg font-semibold mb-4 border-b pb-3 border-slate-600 text-black w-full">ข้อมูลส่วนตัว</legend>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-5">
               <div className="md:col-span-2">
-                <label htmlFor="nationalId" className="block text-sm font-semibold text-slate-300 mb-1">หมายเลขบัตรประจำตัวประชาชน</label>
+                <label htmlFor="nationalId" className="block text-sm font-semibold text-black mb-1">หมายเลขบัตรประจำตัวประชาชน</label>
                 <input 
                   type="tel"
                   inputMode="numeric"
@@ -157,39 +158,38 @@ export default function RegistrationPage() {
                   pattern="\d{13}" 
                   title="กรุณากรอกเลขบัตรประชาชน 13 หลัก" 
                   maxLength="13" 
-                  className="block w-full p-3 bg-slate-800 border border-slate-600 rounded-lg shadow-sm focus:ring-2 focus:ring-violet-500 focus:border-violet-500 transition-colors duration-150 text-slate-200 placeholder-slate-500"
+                  className="block w-full p-3 bg-white border border-slate-300 text-[#0F172A] placeholder-slate-400 focus:outline-none focus:border-[#2563EB] focus:ring-1 focus:ring-[#2563EB]`"
                 />
               </div>
               <div>
-                <label htmlFor="firstName" className="block text-sm font-semibold text-slate-300 mb-1">ชื่อจริง</label>
-                <input type="text" id="firstName" value={firstName} onChange={(e) => setFirstName(e.target.value)} required className="block w-full p-3 bg-slate-800 border border-slate-600 rounded-lg shadow-sm focus:ring-2 focus:ring-violet-500 focus:border-violet-500 transition-colors duration-150 text-slate-200 placeholder-slate-500" />
+                <label htmlFor="firstName" className="block text-sm font-semibold text-black mb-1">ชื่อจริง</label>
+                <input type="text" id="firstName" value={firstName} onChange={(e) => setFirstName(e.target.value)} required className="block w-full p-3 bg-white border border-slate-300 text-[#0F172A] placeholder-slate-400 focus:outline-none focus:border-[#2563EB] focus:ring-1 focus:ring-[#2563EB]`" />
               </div>
               <div>
-                <label htmlFor="lastName" className="block text-sm font-semibold text-slate-300 mb-1">นามสกุล</label>
-                <input type="text" id="lastName" value={lastName} onChange={(e) => setLastName(e.target.value)} required className="block w-full p-3 bg-slate-800 border border-slate-600 rounded-lg shadow-sm focus:ring-2 focus:ring-violet-500 focus:border-violet-500 transition-colors duration-150 text-slate-200 placeholder-slate-500" />
+                <label htmlFor="lastName" className="block text-sm font-semibold text-black">นามสกุล</label>
+                <input type="text" id="lastName" value={lastName} onChange={(e) => setLastName(e.target.value)} required className="block w-full p-3 bg-white border border-slate-300 text-[#0F172A] placeholder-slate-400 focus:outline-none focus:border-[#2563EB] focus:ring-1 focus:ring-[#2563EB]`" />
               </div>
               <div className="md:col-span-2">
-                <label htmlFor="gender" className="block text-sm font-semibold text-slate-300 mb-1">เพศ</label>
-                <select id="gender" value={gender} onChange={(e) => setGender(e.target.value)} required className="block w-full p-3 bg-slate-800 border border-slate-600 rounded-lg shadow-sm focus:ring-2 focus:ring-violet-500 focus:border-violet-500 transition-colors duration-150 text-slate-200">
+                <label htmlFor="gender" className="block text-sm font-semibold text-black mb-1">เพศ</label>
+                <select id="gender" value={gender} onChange={(e) => setGender(e.target.value)} required className="block w-full p-3 bg-white border border-slate-300 text-[#0F172A] placeholder-slate-400 focus:outline-none focus:border-[#2563EB] focus:ring-1 focus:ring-[#2563EB]">
                   <option value="">เลือกเพศ</option>
                   <option value="ชาย">ชาย (Male)</option>
                   <option value="หญิง">หญิง (Female)</option>
-                  <option value="อื่นๆ">อื่นๆ</option>
                 </select>
               </div>
               <div className="md:col-span-2">
-                <label htmlFor="dob" className="block text-sm font-semibold text-slate-300 mb-1">วันเดือนปีเกิด</label>
-                <input type="date" id="dob" value={dob} onChange={(e) => setDob(e.target.value)} required className="block w-full p-3 bg-slate-800 border border-slate-600 rounded-lg shadow-sm focus:ring-2 focus:ring-violet-500 focus:border-violet-500 transition-colors duration-150 text-slate-200" />
+                <label htmlFor="dob" className="block text-sm font-semibold text-black mb-1">วันเดือนปีเกิด</label>
+                <input type="date" id="dob" value={dob} onChange={(e) => setDob(e.target.value)} required className="block w-full p-3 bg-white border border-slate-300 text-[#0F172A] placeholder-slate-400 focus:outline-none focus:border-[#2563EB] focus:ring-1 focus:ring-[#2563EB]" />
               </div>
             </div>
           </fieldset>
 
           {/* Fieldset: ข้อมูลการติดต่อ */}
           <fieldset className="space-y-4">
-            <legend className="text-lg font-semibold mb-4 border-b pb-3 border-slate-600 text-slate-200 w-full">ข้อมูลการติดต่อ</legend>
+            <legend className="text-lg font-semibold mb-4 border-b pb-3 border-slate-600 text-black w-full">ข้อมูลการติดต่อ</legend>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-5">
               <div className="md:col-span-2">
-                <label htmlFor="phone" className="block text-sm font-semibold text-slate-300 mb-1">หมายเลขโทรศัพท์ที่ติดต่อได้</label>
+                <label htmlFor="phone" className="block text-sm font-semibold text-black">หมายเลขโทรศัพท์ที่ติดต่อได้</label>
                 <input 
                   type="tel" 
                   id="phone" 
@@ -199,54 +199,54 @@ export default function RegistrationPage() {
                   pattern="^0\d{9}$" 
                   title="กรุณากรอกเบอร์โทรศัพท์ 10 หลักให้ถูกต้อง (เช่น 0812345678)" 
                   maxLength="10"
-                  className="block w-full p-3 bg-slate-800 border border-slate-600 rounded-lg shadow-sm focus:ring-2 focus:ring-violet-500 focus:border-violet-500 transition-colors duration-150 text-slate-200 placeholder-slate-500"
+                  className="block w-full p-3 bg-white border border-slate-300 text-[#0F172A] placeholder-slate-400 focus:outline-none focus:border-[#2563EB] focus:ring-1 focus:ring-[#2563EB]`"
                 />
               </div>
               <div className="md:col-span-2">
-                <label htmlFor="address" className="block text-sm font-semibold text-slate-300 mb-1">ที่อยู่ที่สามารถติดต่อได้</label>
-                <textarea id="address" value={address} onChange={(e) => setAddress(e.target.value)} required rows="3" className="block w-full p-3 bg-slate-800 border border-slate-600 rounded-lg shadow-sm focus:ring-2 focus:ring-violet-500 focus:border-violet-500 transition-colors duration-150 text-slate-200 placeholder-slate-500" />
+                <label htmlFor="address" className="block text-sm font-semibold text-black mb-1">ที่อยู่ที่สามารถติดต่อได้</label>
+                <textarea id="address" value={address} onChange={(e) => setAddress(e.target.value)} required rows="3" className="block w-full p-3 bg-white border border-slate-300 text-[#0F172A] placeholder-slate-400 focus:outline-none focus:border-[#2563EB] focus:ring-1 focus:ring-[#2563EB]`" />
               </div>
             </div>
           </fieldset>
 
           {/* Fieldset: ข้อมูลสุขภาพ */}
           <fieldset className="space-y-4">
-            <legend className="text-lg font-semibold mb-4 border-b pb-3 border-slate-600 text-slate-200 w-full">ข้อมูลสุขภาพ</legend>
+            <legend className="text-lg font-semibold mb-4 border-b pb-3 border-slate-600 text-black w-full">ข้อมูลสุขภาพ</legend>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-5">
               <div className="md:col-span-2">
-                <label htmlFor="allergies" className="block text-sm font-semibold text-slate-300 mb-1">ประวัติการแพ้ยา (หากมี)</label>
-                <textarea id="allergies" value={allergies} onChange={(e) => setAllergies(e.target.value)} rows="3" className="block w-full p-3 bg-slate-800 border border-slate-600 rounded-lg shadow-sm focus:ring-2 focus:ring-violet-500 focus:border-violet-500 transition-colors duration-150 text-slate-200 placeholder-slate-500" />
+                <label htmlFor="allergies" className="block text-sm font-semibold text-black mb-1">ประวัติการแพ้ยา (หากมี)</label>
+                <textarea id="allergies" value={allergies} onChange={(e) => setAllergies(e.target.value)} rows="3" className="block w-full p-3 bg-white border border-slate-300 text-[#0F172A] placeholder-slate-400 focus:outline-none focus:border-[#2563EB] focus:ring-1 focus:ring-[#2563EB]`" />
               </div>
               <div className="md:col-span-2">
-                <label htmlFor="disease" className="block text-sm font-semibold text-slate-300 mb-1">โรคประจำตัว (หากมี)</label>
-                <textarea id="disease" value={disease} onChange={(e) => setDisease(e.target.value)} rows="3" className="block w-full p-3 bg-slate-800 border border-slate-600 rounded-lg shadow-sm focus:ring-2 focus:ring-violet-500 focus:border-violet-500 transition-colors duration-150 text-slate-200 placeholder-slate-500" />
+                <label htmlFor="disease" className="block text-sm font-semibold text-black mb-1">โรคประจำตัว (หากมี)</label>
+                <textarea id="disease" value={disease} onChange={(e) => setDisease(e.target.value)} rows="3" className="block w-full p-3 bg-white border border-slate-300 text-[#0F172A] placeholder-slate-400 focus:outline-none focus:border-[#2563EB] focus:ring-1 focus:ring-[#2563EB]`" />
               </div>
               <div className="md:col-span-2">
-                <label htmlFor="weight" className="block text-sm font-semibold text-slate-300 mb-1">น้ำหนัก (กก.)</label>
-                <input type="number" id="weight" value={weight} onChange={(e) => setWeight(e.target.value)} required min="0" className="block w-full p-3 bg-slate-800 border border-slate-600 rounded-lg shadow-sm focus:ring-2 focus:ring-violet-500 focus:border-violet-500 transition-colors duration-150 text-slate-200 placeholder-slate-500" />
+                <label htmlFor="weight" className="block text-sm font-semibold text-black mb-1">น้ำหนัก (กก.)</label>
+                <input type="number" id="weight" value={weight} onChange={(e) => setWeight(e.target.value)} required min="0" className="block w-full p-3 bg-white border border-slate-300 text-[#0F172A] placeholder-slate-400 focus:outline-none focus:border-[#2563EB] focus:ring-1 focus:ring-[#2563EB]`" />
               </div>
               <div className="md:col-span-2">
-                <label htmlFor="height" className="block text-sm font-semibold text-slate-300 mb-1">ส่วนสูง (ซม.)</label>
-                <input type="number" id="height" value={height} onChange={(e) => setHeight(e.target.value)} required min="0" className="block w-full p-3 bg-slate-800 border border-slate-600 rounded-lg shadow-sm focus:ring-2 focus:ring-violet-500 focus:border-violet-500 transition-colors duration-150 text-slate-200 placeholder-slate-500" />
+                <label htmlFor="height" className="block text-sm font-semibold text-black mb-1">ส่วนสูง (ซม.)</label>
+                <input type="number" id="height" value={height} onChange={(e) => setHeight(e.target.value)} required min="0" className="block w-full p-3 bg-white border border-slate-300 text-[#0F172A] placeholder-slate-400 focus:outline-none focus:border-[#2563EB] focus:ring-1 focus:ring-[#2563EB]`" />
               </div>
             </div>
           </fieldset>
 
           {/* Fieldset: อาการและความต้องการ */}
           <fieldset className="space-y-4">
-            <legend className="text-lg font-semibold mb-4 border-b pb-3 border-slate-600 text-slate-200 w-full">อาการและความต้องการ</legend>
+            <legend className="text-lg font-semibold mb-4 border-b pb-3 border-black text-black w-full">อาการและความต้องการ</legend>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-5">
               <div className="md:col-span-2">
-                <label htmlFor="symptoms" className="block text-sm font-semibold text-slate-300 mb-1">อาการเบื้องต้น</label>
-                <textarea id="symptoms" value={symptoms} onChange={(e) => setSymptoms(e.target.value)} required rows="3" className="block w-full p-3 bg-slate-800 border border-slate-600 rounded-lg shadow-sm focus:ring-2 focus:ring-violet-500 focus:border-violet-500 transition-colors duration-150 text-slate-200 placeholder-slate-500" />
+                <label htmlFor="symptoms" className="block text-sm font-semibold text-black mb-1">อาการเบื้องต้น</label>
+                <textarea id="symptoms" value={symptoms} onChange={(e) => setSymptoms(e.target.value)} required rows="3" className="block w-full p-3 bg-white border border-slate-300 text-[#0F172A] placeholder-slate-400 focus:outline-none focus:border-[#2563EB] focus:ring-1 focus:ring-[#2563EB]`" />
               </div>
               <div className="md:col-span-2">
-                <label htmlFor="desired" className="block text-sm font-semibold text-slate-300 mb-1">วัตถุประสงค์ในการเข้ารับบริการ</label>
-                <textarea id="desired" value={desired} onChange={(e) => setDesired(e.target.value)} required rows="3" className="block w-full p-3 bg-slate-800 border border-slate-600 rounded-lg shadow-sm focus:ring-2 focus:ring-violet-500 focus:border-violet-500 transition-colors duration-150 text-slate-200 placeholder-slate-500" />
+                <label htmlFor="desired" className="block text-sm font-semibold text-black mb-1">วัตถุประสงค์ในการเข้ารับบริการ</label>
+                <textarea id="desired" value={desired} onChange={(e) => setDesired(e.target.value)} required rows="3" className="block w-full p-3 bg-white border border-slate-300 text-[#0F172A] placeholder-slate-400 focus:outline-none focus:border-[#2563EB] focus:ring-1 focus:ring-[#2563EB]`" />
               </div>
               <div className="md:col-span-2">
-                <label htmlFor="certificate" className="block text-sm font-semibold text-slate-300 mb-1">ประสงค์จะรับใบรับรองแพทย์หรือไม่</label>
-                <select id="certificate" value={certificate} onChange={(e) => setCertificate(e.target.value)} required className="block w-full p-3 bg-slate-800 border border-slate-600 rounded-lg shadow-sm focus:ring-2 focus:ring-violet-500 focus:border-violet-500 transition-colors duration-150 text-slate-200">
+                <label htmlFor="certificate" className="block text-sm font-semibold text-black mb-1">ประสงค์จะรับใบรับรองแพทย์หรือไม่</label>
+                <select id="certificate" value={certificate} onChange={(e) => setCertificate(e.target.value)} required className="block w-full p-3 bg-white border border-slate-300 text-[#0F172A] placeholder-slate-400 focus:outline-none focus:border-[#2563EB] focus:ring-1 focus:ring-[#2563EB]">
                   <option value="">เลือก</option>
                   <option value="รับ">รับ</option>
                   <option value="ไม่รับ">ไม่รับ</option>
@@ -259,9 +259,9 @@ export default function RegistrationPage() {
         <div className="pt-4">
           <label htmlFor="consent" className="flex items-start gap-x-3">
             <input type="checkbox" id="consent" checked={consentChecked} onChange={(e) => setConsentChecked(e.target.checked)} required className="mt-1 h-5 w-5 text-violet-500 bg-slate-700 border-slate-500 rounded focus:ring-violet-600 focus:ring-offset-slate-800" />
-            <span className="text-sm text-slate-400">
-              ข้าพเจ้ายินยอมให้ข้อมูลและตกลงรับการรักษาผ่านระบบ Telemedicine ตาม
-              <Link href="/terms" target="_blank" className="text-cyan-400 hover:underline ml-1 font-medium">ข้อตกลงและเงื่อนไขการให้บริการ</Link>
+            <span className="text-sm text-black">
+            ข้าพเจ้ายินยอมให้ข้อมูลส่วนบุคคลและตกลงรับการตรวจรักษาผ่านระบบแพทย์ทางไกล (Telemedicine) ของโรงพยาบาล
+             
             </span>
           </label>
         </div>
@@ -273,7 +273,7 @@ export default function RegistrationPage() {
             className={`w-full text-white py-3 px-4 rounded-lg font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500 transition-all duration-300 shadow-sm text-lg
               ${isSubmitDisabled 
                 ? 'bg-slate-600 cursor-not-allowed' 
-                : 'bg-violet-600 hover:bg-violet-700 hover:shadow-lg hover:shadow-violet-500/30 transform hover:scale-105'
+                : 'bg-blue-600 hover:bg-blue-600 hover:shadow-lg hover:shadow-violet-500/30 transform hover:scale-105'
               }`}
           >
            {loading ? 'กำลังลงทะเบียน...' : 'ลงทะเบียน'}
