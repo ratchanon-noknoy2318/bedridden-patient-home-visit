@@ -14,6 +14,5 @@ Healthcare registration system for hospitals enabling 24/7 patient self-registra
 - Self-registration 24/7
 - Automatic LINE notifications to nurses
 
-## Evidence of Usage
-Used by the Mayor of Kamphaeng Phet Municipality  
-https://www.kppmu.go.th/news-detail?hd=1&id=124000
+## News
+ https://www.kppmu.go.th/news-detail?hd=1&id=124000
