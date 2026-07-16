@@ -1,18 +1,5 @@
-## Telemedicine Registration System
+![kppmch](https://ratchanonnoknoy.vercel.app/projects/3.webp)
 
-Healthcare registration system for hospitals enabling 24/7 patient self-registration, LINE notifications via Messaging API, and data storage using Google Sheets + Apps Script.
-
-## Tech Stack
-- Next.js
-- Tailwind CSS
-- Google Apps Script
-- Google Sheet
-- LINE Messaging API
-
-
-## Features
-- Self-registration 24/7
-- Automatic LINE notifications to nurses
 
 ## News
  https://www.kppmu.go.th/news-detail?hd=1&id=124000
