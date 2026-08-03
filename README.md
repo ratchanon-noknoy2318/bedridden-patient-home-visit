@@ -38,7 +38,7 @@
 **Ratchanon Noknoy**  
 - GitHub: [@ratchanon-noknoy2318](https://github.com/ratchanon-noknoy2318)  
 - LinkedIn: [linkedin.com/in/ratchanon-noknoy](https://linkedin.com/in/ratchanon-noknoy)  
-- Occupation: Solo Software Engineer
+- Role: Solo Software Engineer
 
 ---
 ## Usage Policy
