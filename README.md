@@ -31,7 +31,10 @@
    npm run dev
    
 2. เปิดเว็บที่ http://localhost:3000 เพื่อใช้งานระบบลงทะเบียน
-
+3. ตั้งค่า สร้างไฟล์ `.env` ที่ root ของโปรเจกต์ และใส่ค่าตามนี้
+   ```bash
+    APPS_SCRIPT_WEB_APP_URL=your_google__apps_scrupt
+    GOOGLE_SHEETS_API_KEY=your_google_sheets_api_key
 ---
 ## Author
 
