@@ -1,6 +1,6 @@
-# HOSxP Registration System
+# Registration Website
 
-ระบบลงทะเบียนผู้ป่วยที่เชื่อมต่อกับ **HOSxP**, **LINE Notifications** และ **Google Sheets**  
+ระบบลงทะเบียนผู้ป่วยที่เชื่อมต่อกับ **LINE Notifications** และ **Google Sheets**  
 ช่วยให้การลงทะเบียนผู้ป่วยสะดวกขึ้น พร้อม SQL scripts สำหรับรายงาน OPD income และข้อมูลอื่น ๆ
 
 ---
@@ -15,7 +15,7 @@
 ---
 
 ## 🛠 Requirements
-- **Database**: MS SQL Server (HOSxP)  
+- **Database**: Google Sheets 
 - **Backend/Frontend**: Node.js + Google Apps Script  
 - **Integration**: LINE Messaging API, Google Sheets API  
 - **Tools**: VSCode, SSMS  
