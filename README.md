@@ -56,3 +56,15 @@ Ratchanon Noknoy
 - Modification and extension are allowed within related organizations.
 - Users must comply with personal data protection regulations, including **Thailand PDPA** and **HIPAA-aligned practices**.
 - The developer is not responsible for misuse or unauthorized usage of this system.
+
+---
+
+## Real-world Usage
+
+- Successfully deployed for real-world use by Kamphaeng Phet Municipality.
+- The project was featured through official municipality news and social media channels.
+
+### References
+
+- Official News: https://www.kppmu.go.th/news-detail?hd=1&id=124000
+- TikTok: https://www.tiktok.com/@kpp.pr/video/7506431498870902037
