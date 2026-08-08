@@ -1,7 +1,7 @@
 # Registration Website
 
-A patient registration system integrated with **LINE Notifications** and **Google Sheets**.  
-The system improves patient registration workflow efficiency and provides SQL scripts for OPD income reports and other healthcare data reports.
+A patient registration system developed from nurses’ requirements using **Clinical Terminology**, integrated with LINE Notifications and **Google Sheets**. The system improves patient registration workflows and communication efficiency.
+
 
 ---
 
