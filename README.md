@@ -1,4 +1,4 @@
-# HealthTech Project — Telemedicine Registration Platform
+# Telemedicine Registration Platform
 
 A patient registration system developed from nurses’ requirements using **Clinical Terminology**, integrated with LINE Notifications and **Google Sheets**. The system improves patient registration workflows and communication efficiency.
 
