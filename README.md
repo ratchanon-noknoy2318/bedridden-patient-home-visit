@@ -80,7 +80,7 @@ GOOGLE_SHEETS_API_KEY=your_google_sheets_api_key
 
 This platform has been successfully deployed and validated in real-world clinical environments by the **Kamphaeng Phet Municipality**. The project and its impact on community healthcare workflows were featured on official government communication networks:
 
-- **Official Municipality News Update:** [KPP Municipal News (ID: 124000)](https://kppmu.go.th)
+- **Official Municipality News Update:** [KPP Municipal News (ID: 124000)](https://www.kppmu.go.th/news-detail?hd=1&id=124000)
 - **Public Impact Showcase Video:** [Official TikTok Report by @kpp.pr](https://tiktok.com)
 
 ---
