@@ -4,7 +4,7 @@ A lightweight, user-centered patient registration system custom-built from nurse
 
 ---
 
-## 🌟 Key Architectural Highlights & Engineering Decisions
+## Key Architectural Highlights & Engineering Decisions
 
 - **Zero-Infrastructure Cost:** Built entirely on a decoupled architecture using free, open-source utilities and cloud APIs, eliminating server maintenance for resource-limited public healthcare centers.
 - **User-Centric Data Layer:** Leverages Google Sheets as an accessible, real-time reactive database for immediate on-site verification by nursing staff with zero training overhead.
@@ -12,7 +12,7 @@ A lightweight, user-centered patient registration system custom-built from nurse
 
 ---
 
-## 🚀 Features
+## Features
 
 - Register new patients through a dynamic Next.js web application.
 - Send automated, real-time LINE notifications to both patients and healthcare staff upon registration.
@@ -22,7 +22,7 @@ A lightweight, user-centered patient registration system custom-built from nurse
 
 ---
 
-## 🏗️ System Architecture & Data Flow
+## System Architecture & Data Flow
 
 ```mermaid
 graph TD
@@ -35,7 +35,7 @@ graph TD
 
 ---
 
-## 🛠️ Requirements & Tech Stack
+## Requirements & Tech Stack
 
 - **Frontend / UI**: Next.js 14, Tailwind CSS, Vercel Hosting
 - **Serverless Backend**: Google Apps Script (Web App Engine)
@@ -45,7 +45,7 @@ graph TD
 
 ---
 
-## 💻 How to Use
+## How to Use
 
 1. Clone the repository and install dependencies:
 
@@ -67,7 +67,7 @@ GOOGLE_SHEETS_API_KEY=your_google_sheets_api_key
 
 ---
 
-## ⚖️ Usage Policy & Compliance
+## Usage Policy & Compliance
 
 - This system is strictly developed for non-commercial use within public public healthcare infrastructure and local community organizations.
 - Modification and functional extension are highly encouraged within related clinical networks.
@@ -76,7 +76,7 @@ GOOGLE_SHEETS_API_KEY=your_google_sheets_api_key
 
 ---
 
-## 🌍 Real-world Validation & Impact
+## Real-world Validation & Impact
 
 This platform has been successfully deployed and validated in real-world clinical environments by the **Kamphaeng Phet Municipality**. The project and its impact on community healthcare workflows were featured on official government communication networks:
 
@@ -85,7 +85,7 @@ This platform has been successfully deployed and validated in real-world clinica
 
 ---
 
-## 🧑‍💻 Author
+## Author
 
 **Ratchanon Noknoy**
 - **Role:** Solo Software & Solutions Engineer
