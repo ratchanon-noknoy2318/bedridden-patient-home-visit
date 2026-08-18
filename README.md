@@ -90,4 +90,4 @@ This platform has been successfully deployed and validated in real-world clinica
 **Ratchanon Noknoy**
 - **Role:** Solo Software & Solutions Engineer
 - **GitHub:** [ratchanon-noknoy2318](https://github.com/ratchanon-noknoy2318)
-- **LinkedIn:** [linkedin.com/in/ratchanon-noknoy/](https://www.linkedin.com/in/ratchanon-noknoy/)
+- **LinkedIn:** [linkedin.com/in/ratchanon-noknoy](https://www.linkedin.com/in/ratchanon-noknoy/)
