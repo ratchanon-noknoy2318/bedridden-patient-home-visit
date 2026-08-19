@@ -1,6 +1,6 @@
-# Telemedicine Registration Platform
+# Official Project of the Mayor of Kamphaeng Phet Municipality
 
-A lightweight, user-centered patient registration system custom-built from nurses' real-world workflows and clinical requirements. Specially engineered for community hospitals to bypass registry bottlenecks without expanding infrastructure costs.
+A lightweight, user-centered patient registration system designed from nurses' real-world workflows and clinical requirements. Built for community hospitals to streamline patient registration without increasing infrastructure costs.
 
 ---
 
