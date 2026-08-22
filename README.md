@@ -1,4 +1,4 @@
-# Official Project of the Mayor of Kamphaeng Phet Municipality
+# Patient Registration System: Official Municipal Project
 
 A lightweight, user-centered patient registration system designed from nurses' real-world workflows and clinical requirements. Built for community hospitals to streamline patient registration without increasing infrastructure costs.
 
